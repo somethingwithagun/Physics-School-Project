@@ -1,0 +1,254 @@
+    /* обнуление */
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+body, html {
+    height: 100%;
+}
+body {
+    background-color: #11240e;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+    /* контент */
+.header-text {
+    height: 90px;
+    font-size: 70px;
+    color:#ffffffc6;
+    letter-spacing: 60px;
+    display:flex;
+    justify-content: center;
+}
+.row {
+    margin-bottom: 120px;
+}
+.row_1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.row_2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.row__title {
+    border: #ffffffc6 solid 2px;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 0.5px;
+    color:#ffffffc6;
+    display: flex;
+    justify-content: center;
+}
+.elements {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.physic-element {
+    display: inherit;
+}   
+.physic-element__frame {
+
+    transform: rotate(30deg);
+}
+.physic-element__frame:hover a img {
+    opacity: 1;
+    width: 270px;
+    height: 250px;
+    transform: rotate(180deg);
+}
+.physic-element__frame a img {
+    opacity: 0.7;
+    width: 240px;
+    height: 220px;
+    transition: 1s ease 0s;
+}
+.physic-electro {
+    display: inherit;
+}
+.physic-electro__frame {
+    position: relative;
+    width: 300px;
+    height:300px;
+    background-image: url(../images/lamp.png);
+}
+.energy {
+    opacity: 0.2;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    transition: 0.5s ease 0s;
+}
+.energy_1:hover {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    top:200px;
+    left:50px;
+}
+.energy_1 {
+    top:210px;
+    left:60px;
+}
+.energy_2:hover {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    top:160px;
+    left:90px;
+}
+.energy_2 {
+    top:170px;
+    left:100px;
+}
+.energy_3:hover {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    top:120px;
+    left:130px;
+}
+.energy_3 {
+    top:130px;
+    left:140px;
+}
+
+.physic-magnet {
+    display: inherit;
+}
+.physic-magnet__frame {
+
+    position: relative;
+
+}
+.physic-magnet__frame:hover .ferrum-block {
+    opacity: 1;
+    top:14px;
+    right:-16px;
+}
+.magnet:hover {
+    opacity: 1;
+    width: 180px;
+    height: 180px;
+}
+.ferrum-block {
+    opacity: 0.7;
+    width: 100px;
+    height: 50px;
+    background-color: #b7b4b4;
+    transform: rotate(45deg);
+    position: absolute;
+    top:-50px;
+    right:-70px;
+    transition: 1s ease 0s;
+}
+.magnet {
+    opacity: 0.7;
+    width: 150px;
+    height: 150px;
+    transition: 1s ease 0s;
+}
+.physic-wise {
+
+}
+.physic-wise__frame {
+    width: 150px;
+    height: 200px;
+}
+.wise {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    border: 5px #ffffffc6 solid;
+    border-radius: 20px;
+    transition: 1s ease 0s;
+}
+.physic-wise__frame:hover .wise {
+    opacity: 1;
+    width: 120%;
+    height: 120%;
+}
+.physic-termo {}
+.physic-termo__frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+}
+.termo {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s ease 0s;
+}
+.termo_block {
+    opacity: 0.7;
+    position: absolute;
+    bottom:40px;
+    right: 92px;
+    width: 13px;
+    height: 10px;
+    background-color: #e05a67;
+    transition: 1s ease 0s;
+}
+.physic-termo__frame:hover .termo {
+    opacity: 1;
+    width: 105%;
+    height: 105%;
+}
+.physic-termo__frame:hover .termo_block {
+    opacity: 1;
+    bottom: 10px;
+    right: 87px;
+    height: 150px;
+}
+.formulas {
+    font-size: 30px;
+    color: #ffffffc6;
+}
+.formula__title {
+
+}
+.footer {
+    background-color: #664334;
+    padding: 30px;
+}
+.footer__menu {}
+.menu__items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.menu__item {
+    text-align: center;
+}
+.menu__title {
+    color:#ffffffc9;
+    font-weight: bold;
+}
+.title__link {
+    color:#ffffffc9;
+}
+.footer__copy {
+    display: flex;
+    justify-content: flex-end;
+}
+
